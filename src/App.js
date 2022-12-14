@@ -131,8 +131,8 @@ function App() {
       setSquareBeingDragged(null)
       setSquareBeingReplaced(null)
     } else {
-      currentColorArrangement[squareBeingReplacedId] = squareBeingReplacedId
-      currentColorArrangement[squareBeingDraggedId] = squareBeingDraggedId
+      currentColorArrangement[squareBeingReplacedId] = squareBeingReplaced.style.backgroundColor
+      currentColorArrangement[squareBeingDraggedId] = squareBeingDragged.style.backgroundColor
       setCurrentColorArrangement([...currentColorArrangement])
     }
 
